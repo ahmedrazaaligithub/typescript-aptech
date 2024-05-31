@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mx-auto my-8">
+        <!-- <div>
+            <p>User name</p>
+        <input type="text" id="name"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1"
+        >
+        </div>
+        <div>
+            <p>Email</p>
+    <input type="email"id="email"
+    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1"
+    >
+        </div>
+        <div>
+            <p>Address</p>
+    <input type="txt"id="address"
+    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1"
+    >
+        </div>
+        <div>
+            <p>Phone no</p>
+    <input type="number"id="pn"
+    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1"
+    >
+        </div>
+    
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="addData()">add</button>
+
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id="table">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            User name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Email
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Address
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Phone no
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+
+    </div> -->
+
+        <div class="my-8">
+            <p class="text-2xl font-semi-bold">Salary</p>
+            <p>User name</p>
+        <input type="text" id="name"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1"
+        >
+        </div>
+            <div>
+                <p>days you come</p>
+                <input type="number" id="days"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1">
+            </div>
+
+            <!-- dep -->
+            <div>
+                <label for="department">Department</label>
+                <select id="department"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-1">
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                    <!-- Add more departments as needed -->
+                </select>
+            </div>
+            <!-- dep -->
+            <br>
+            <button class="my-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                onclick="addSalary()">add</button>
+            <div class="my-4">
+                <div class="relative overflow-x-auto">
+                    <table id="salaryData"
+                        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    tax/allownces
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    amount
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
