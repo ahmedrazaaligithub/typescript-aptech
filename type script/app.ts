@@ -49,7 +49,7 @@ if(attendence > 26){
     netSalary = grossSalary - tax
     salaryData.innerHTML +=`
     <tr class='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
-    <td class='class='px-6 py-4''>user name</td><td class='class='px-6 py-4''>${userName.value} RS</td></tr>
+    <td class='class='px-6 py-4''>user name</td><td class='class='px-6 py-4''>${userName.value} </td></tr>
     <td class='class='px-6 py-4''>department</td><td class='class='px-6 py-4''>${departmentSelect.value} </td></tr>
     <td class='class='px-6 py-4''>basicSalary</td><td class='class='px-6 py-4''>${basicSalary} RS</td></tr>
     <tr class='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>

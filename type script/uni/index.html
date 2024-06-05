@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mx-auto my-5" id="wrapper" >
+        <h1 class="font-semibold text-2xl my-4 underline">Course Registration</h1>
+        <div class="my-4">
+            <p class="font-medium">Id</p>
+            <input type="text" id="std_id"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1">
+        </div>
+        <div class="my-4">
+            <p class="font-medium">Student Name</p>
+            <input type="text" id="std_name"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1">
+        </div>
+        <div class="my-4">
+            <p class="font-medium">No of courses</p>
+            <input type="number" id="std_course"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1">
+        </div>
+        <!--  -->
+        <div class="flex gap-4">
+
+            <div>
+                <label for="transportation">Transportation</label>
+                <select id="transportation"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-1">
+                    <option value="12000">yes</option>
+                    <option value="0">no</option>
+                </select>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="me-7">
+                <label for="library">Library</label>
+                <select id="library"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-1">
+                    <option value="3000">yes</option>
+                    <option value="0">no</option>
+                </select>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div>
+                <label for="sports">Sports</label>
+                <select id="sports"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-1">
+                    <option value="7000">yes</option>
+                    <option value="0">no</option>
+                </select>
+            </div>
+        </div>
+        <!--  -->
+        <div>
+            <label for="gpa">Gpa</label>
+            <select id="gpa"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-1">
+                <option value=0.95>3.8 - 4.0</option>
+                <option value=0.75>3.6 - 3.79</option>
+                <option value=0.50>3.5 - 3.59</option>
+                <option value=0>less than 3.5 - 3.59</option>
+            </select>
+        </div>
+        <!--  -->
+
+        <button class="my-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="getRegistration()">add</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
